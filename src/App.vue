@@ -1,30 +1,61 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <!-- Navbar -->
+  <!-- <nav v-if="!isLoginPage" class="navbar">
+    <div class="navbar-left">
+      <img src="./assets/longi-logo.svg" alt="logo" />
+      <router-link to="/">Home</router-link>
+    </div>
+    <div class="navbar-right">
+      <router-link :to="{ name: 'Login'}">Log out</router-link>
+    </div>
+  </nav> -->
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+        crossorigin="anonymous">
+  <longinav></longinav>
+  <!-- Navbar -->
+
   <router-view/>
 </template>
 
+<script>
+// --- imports --- //
+import longinav from './components/longi-nav'
+// --- imports --- //
+
+
+
+export default {
+  name: 'App',
+  components: {
+    longinav
+  },
+  computed: {
+    isLoginPage() {
+      return this.$route.name === 'Login';
+    }
+  }
+}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body, #app {
+  background-color: #f9f9f9;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  /* text-align: center; */
+  color: #131313;
+  
 }
 </style>
