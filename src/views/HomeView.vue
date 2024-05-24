@@ -1,25 +1,25 @@
 <template>
-  <div class="container">
+  <longinav></longinav>
+  <div class="home-content">
     <h1>Home Page</h1>
-  
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatibus voluptate id modi officiis possimus repudiandae earum assumenda velit dolorem?</p>
   </div>
-    
 </template>
 
 <script>
 export default {
   name: 'HomeView',
-  components: {
-    
-  }
+  components: {}
 }
 </script>
 
 <style scoped>
-
+.home-content {
+  margin-top: 10px;
+  padding: 2rem;
+}
 </style>

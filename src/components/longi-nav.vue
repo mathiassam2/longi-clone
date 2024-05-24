@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 nav{
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
   width: 100%;
   background: #fff;

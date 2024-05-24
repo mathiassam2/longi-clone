@@ -58,4 +58,11 @@ body, #app {
   color: #131313;
   
 }
+.longinav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
 </style>
