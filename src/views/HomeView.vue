@@ -1,100 +1,61 @@
 <template>
   <div class="home-content">
-    <div class="card">
-      <div class="header">
-        <div class="image"></div>
-        <div>
-          <p class="name">Environment, Health, and Safety (EHS)</p>
-        </div>
-      </div>
-      <p class="message">
-        Quality Policy • EHS Policy • EHS Training Assessment
-      </p>
-    </div>
+    <h1 class="title">PORTAL</h1>
+    <div class="card-container">
+      <homecard title="Environment, Health, and Safety (EHS)"
+                message="Quality Policy • EHS Policy • EHS Training Assessment"
+                icon="fas fa-shield-alt"
+                redirect-route="/ehs" />
 
-    <div class="card">
-      <div class="header">
-        <div class="image"></div>
-        <div>
-          <p class="name">Human Resources and Employee Management</p>
-        </div>
-      </div>
-      <p class="message">
-        HR Service System • Time Attendance • Employee Services
-      </p>
-    </div>
+      <homecard title="Human Resources and Employee Management"
+                message="HR Service System • Time Attendance • Employee Services"
+                icon="fas fa-user"
+                redirect-route="/hr" />
 
-    <div class="card">
-      <div class="header">
-        <div class="image"></div>
-        <div>
-          <p class="name">IT and Support Systems</p>
-        </div>
-      </div>
-      <p class="message">
-        IT-HelpDesk • Password • Application Installation
-      </p>
+      <homecard title="IT and Support Systems"
+                message="IT-HelpDesk • Password • Application Installation"
+                icon="fas fa-laptop"
+                redirect-route="/it" />
+
+      <homecard title="Inventory and Asset Management"
+                message="Checklists • Plant Inventory • Vehicle Registration"
+                icon="fas fa-warehouse"
+                redirect-route="/inventory" />
+
+      <homecard title="Training and Development"
+                message="Training and Development"
+                icon="fas fa-chalkboard-teacher"
+                redirect-route="/training" />
     </div>
   </div>
 </template>
 
 <script>
+import homecard from '../components/home-card.vue';
+
 export default {
   name: 'HomeView',
-  components: {}
+  components: {
+    homecard
+  }
 }
 </script>
 
 <style scoped>
+.title {
+  color: #e60012;
+  margin-top: 50px;
+  font-size: 3rem;
+}
 .home-content {
-  display: flex; /* Added display flex */
-  flex-wrap: wrap; /* Allow flex items to wrap */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
   padding: 2rem;
-}
-
-.card {
-  background-color: #fff;
-  padding: 1.5rem; /* Reduced padding */
-  max-width: 280px; /* Decreased max-width */
-  border-radius: 10px;
-  box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
-  margin-right: 20px; /* Added margin between cards */
-  margin-bottom: 20px; /* Added margin between cards */
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header .image {
-  height: 3rem; /* Decreased image size */
-  width: 3rem; /* Decreased image size */
-  border-radius: 9999px;
-  object-fit: cover;
-  background-color: #e60012;
-  flex-shrink: 0;
-}
-
-.name {
-  margin-top: 0.25rem;
-  font-size: 1rem; /* Decreased font size */
-  line-height: 1.5rem; /* Decreased line height */
-  font-weight: 600;
-  color: rgba(55, 65, 81, 1);
-  flex-grow: 1;
-  word-break: break-word;
-}
-
-.message {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  margin-top: 0.75rem; /* Decreased margin */
-  color: rgba(107, 114, 128, 1);
 }
 </style>
