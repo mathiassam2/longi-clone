@@ -6,6 +6,7 @@
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
       <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li><router-link :to="{ name: 'Home'}">Home</router-link></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Feedback</a></li>
       <li><router-link :to="{ name: 'Login'}">Log out</router-link></li>
