@@ -31,10 +31,10 @@ methods: {
 
 <style scoped>
 .card {
-    min-height: 110px;
+    min-height: 100px; /* Adjusted height */
     background-color: #fff;
-    padding: 1.5rem;
-    max-width: 280px;
+    padding: 1rem; /* Reduced padding */
+    max-width: 240px; /* Reduced max-width */
     border-radius: 10px;
     box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
     margin-right: 20px;
@@ -54,7 +54,7 @@ methods: {
 }
 
 .header .icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .icon i {
@@ -73,6 +73,7 @@ methods: {
 }
 
 .message {
+    font-size: 0.9rem;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
