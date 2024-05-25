@@ -1,4 +1,12 @@
 <template>
+  <transition name="fade">
+    <erroralert
+      v-if="showAlert"
+      :show-alert="showAlert"
+      :alert-message="alertMessage"
+      @close="showAlert = false"
+    ></erroralert>
+  </transition>
   <div class="container">
     <div class="form-container">
         <div class="logo">
@@ -25,24 +33,41 @@
 </template>
 
 <script>
+import erroralert from '../../components/error-alert.vue';
+
 export default {
+  name: 'HomeView',
+  components: {
+    erroralert
+  },
     data() {
         return {
             users: [
                 { userID: 'user1', password: '123' },
                 { userID: 'user2', password: '456' },
                 { userID: 'user3', password: '789' },
-            ]
+            ],
+            showAlert: false,
+            alertMessage: 'Invalid credentials',
         }
     },
     methods: {
-        login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            console.log('Username:', username);
-            console.log('Password:', password);
-            this.$router.push('/');
+      login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const user = this.users.find(
+          (user) => user.userID === username && user.password === password
+        );
+
+        if (user) {
+          console.log('Logged in as:', user.userID);
+          this.isLoggedIn = true;
+          this.$router.push('/');
+        } else {
+          console.log('Invalid credentials');
+          this.showAlert = true; // Show the alert
         }
+      },
     }
 }
 </script>
