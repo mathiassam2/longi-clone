@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
     <div class="form-container">
         <div class="logo">
             <img src="../../assets/longi-logo.svg" alt="logo" />
@@ -20,6 +21,7 @@
             <button class="sign">Log in</button>
         </form>
     </div>
+  </div>
 </template>
 
 <script>
@@ -50,16 +52,17 @@ export default {
 html {
     color: #131313;
 }
+.container{
+  padding-top: 5rem;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
 .form-container {
   width: 320px;
   border-radius: 0.75rem;
   padding: 2rem;
   color: rgba(243, 244, 246, 1);
-  margin: 0 auto; /* Centering the form horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centering the form vertically */
 }
 
 .logo {
