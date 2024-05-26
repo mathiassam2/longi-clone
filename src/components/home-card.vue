@@ -31,8 +31,9 @@ methods: {
 
 <style scoped>
 .card {
-    min-height: 100px; /* Adjusted height */
+    height: 220px;
     background-color: #fff;
+    overflow: auto;
     padding: 1rem; /* Reduced padding */
     max-width: 240px; /* Reduced max-width */
     border-radius: 10px;
@@ -63,7 +64,7 @@ methods: {
 
 .name {
     margin-top: 0.25rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.5rem;
     font-weight: 600;
     color: rgba(55, 65, 81, 1);

@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .title {
   color: #e60012;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 3rem;
 }
 .home-content {

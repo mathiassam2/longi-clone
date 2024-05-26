@@ -15,7 +15,13 @@
         <p class="title">Welcome!</p>
         <p class="title-description">Enter your username to access portal.</p>
         <form class="form" @submit.prevent="login">
-            <div class="input-group">
+          <label for="username" class="form-label text-secondary">Username</label>
+          <input id="username" name="username" class="form-control form-control-lg mb-3" type="text" autocomplete="off">
+
+          <label for="password" class="form-label text-secondary">Password</label>
+          <input type="password" id="password" class="form-control form-control-lg mb-3" autocomplete="off">
+
+            <!-- <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="" autocomplete="off">
             </div>
@@ -25,7 +31,7 @@
                 <div class="forgot">
                     <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                 </div>
-            </div>
+            </div> -->
             <button class="sign">Log in</button>
         </form>
     </div>
@@ -122,46 +128,6 @@ html {
   margin-top: 1.5rem;
 }
 
-.input-group {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.input-group label {
-  display: block;
-  color:#5c5c5c;
-  margin-bottom: 4px;
-}
-
-.input-group input {
-  width: calc(100% - 2rem);
-  border-radius: 0.375rem;
-  border: 1px solid #c9c9c9;
-  outline: 0;
-  background-color: #ececec;
-  padding: 0.75rem 1rem;
-  color: #131313
-}
-
-
-.input-group input:focus {
-  border-color: #e60012;
-}
-
-.forgot {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  margin: 8px 0 14px 0;
-}
-
-.forgot a,.signup a {
-  color:#131313;
-  text-decoration: none;
-  font-size: 14px;
-}
 
 .sign {
   display: block;
