@@ -30,15 +30,15 @@ export default {
         //side bar json formatting
         sidebarLinks() {
             return [
-            { text: 'Home', name: 'Home' },
-            { text: 'Log out', name: 'Login' },
-            {
-                text: 'Dropdown links',
-                dropdown: [
-                    { text: 'Home', name: 'Home' },
-                    { text: 'Log out', name: 'Login' },
-                ],
-            },
+                { text: 'Home', name: 'Home' },
+                { text: 'Log out', name: 'Login' },
+                {
+                    text: 'Dropdown links',
+                    dropdown: [
+                        { text: 'Home', name: 'Home' },
+                        { text: 'Log out', name: 'Login' },
+                    ],
+                },
             ];
         },
     },
