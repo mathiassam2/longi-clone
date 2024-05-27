@@ -8,10 +8,6 @@
     <div id="main-container" class="container-fluid p-3">
         <!-- main content start -->
         <h3>EHS</h3>
-        <h3>EHS</h3>
-        <h3>EHS</h3>
-        <h3>EHS</h3>
-        <h3>EHS</h3>
         <!-- main content end -->
     </div>
 </div>
