@@ -90,7 +90,7 @@ html {
   justify-content: center;
 }
 .form-container {
-  width: 320px;
+  /* width: 320px; */
   border-radius: 0.75rem;
   padding: 2rem;
   color: rgba(243, 244, 246, 1);

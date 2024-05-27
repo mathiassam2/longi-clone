@@ -1,5 +1,5 @@
 <template>
-<div class="card" @click="redirectToPage">
+<div class="card p-3 m-2" @click="redirectToPage">
     <div class="header">
         <div class="icon">
             <i :class="icon"></i>
@@ -31,17 +31,10 @@ methods: {
 
 <style scoped>
 .card {
-    height: 220px;
-    background-color: #fff;
-    overflow: auto;
-    padding: 1rem; /* Reduced padding */
-    max-width: 240px; /* Reduced max-width */
-    border-radius: 10px;
-    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
+    max-width: 18rem;
+    min-height: 12rem;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -81,6 +74,10 @@ methods: {
     margin-top: 0.75rem;
     color: rgba(107, 114, 128, 1);
     text-align: left;
+}
+
+p {
+    margin-bottom: 0;
 }
 </style>
 
