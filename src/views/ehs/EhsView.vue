@@ -31,19 +31,20 @@ return {
 };
 },
 computed: {
-sidebarLinks() {
-    return [
-    { text: 'Home', name: 'Home' },
-    { text: 'Log out', name: 'Login' },
-    {
-        text: 'Dropdown',
-        dropdown: [
+    //side bar json formatting
+    sidebarLinks() {
+        return [
         { text: 'Home', name: 'Home' },
         { text: 'Log out', name: 'Login' },
-        ],
+        {
+            text: 'Dropdown links',
+            dropdown: [
+                { text: 'Home', name: 'Home' },
+                { text: 'Log out', name: 'Login' },
+            ],
+        },
+        ];
     },
-    ];
-},
 },
 };
 </script>

@@ -5,17 +5,18 @@ import LoginView from "../views/login/LoginView.vue";
 import EhsView from "../views/ehs/EhsView.vue";
 import HrView from "../views/hr/HrView.vue";
 import ItView from "../views/it/ItView.vue";
+import TemplateView from "../views/template/template.vue";
 
 const routes = [
+    {
+        path: "/template",
+        name: "Template",
+        component: TemplateView,
+    },
     {
         path: "/",
         name: "Home",
         component: HomeView,
-    },
-    {
-        path: "/about",
-        name: "About",
-        component: AboutView,
     },
     {
         path: "/login",

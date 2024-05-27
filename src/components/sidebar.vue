@@ -2,7 +2,7 @@
     <div class="bg-light border-end" id="sidebar-wrapper" style="padding-top: 6rem">
       <div class="sidebar-heading border-bottom bg-light text-center">
         <i :class="headerIcon"></i>
-        <h3 class="sidebar-title text-left mt-2">{{ title }}</h3>
+        <h3 class="sidebar-title text-left mt-3">{{ title }}</h3>
       </div>
       <div class="list-group list-group-flush">
         <template v-for="(link, index) in links" :key="index">
