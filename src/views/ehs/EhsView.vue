@@ -5,7 +5,7 @@
         :headerIcon="'fas fa-shield-alt'"
         :links="sidebarLinks"
     ></Sidebar>
-    <div class="container-fluid p-3" style="margin-top: 4rem; margin-left: 20rem;">
+    <div id="main-container" class="container-fluid p-3">
         <!-- main content start -->
         <h3>EHS</h3>
         <h3>EHS</h3>

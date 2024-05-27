@@ -8,10 +8,6 @@
         <div class="container-fluid p-3" style="margin-top: 4rem; margin-left: 20rem;">
         <!-- main content start -->
         <h3>HR</h3>
-        <h3>HR</h3>
-        <h3>HR</h3>
-        <h3>HR</h3>
-        <h3>HR</h3>
         <!-- main content end -->
         </div>
     </div>

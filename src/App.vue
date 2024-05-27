@@ -46,9 +46,18 @@ body, #app {
   
 }
 
-.main-container{
-    margin-top: 70px;
-    margin-left: 250px;
+#main-container{
+    margin-top: 4rem;
+    margin-left: 20rem;
     padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  #main-container {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  }
 }
 </style>

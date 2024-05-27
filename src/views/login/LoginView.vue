@@ -16,23 +16,11 @@
         <p class="title-description">Enter your username to access portal.</p>
         <form class="form" @submit.prevent="login">
           <label for="username" class="form-label text-secondary">Username</label>
-          <input id="username" name="username" class="form-control form-control-lg mb-3" type="text" autocomplete="off">
+          <input id="username" name="username" class="form-control form-control-lg mb-3" type="text" autocomplete="off" required>
 
           <label for="password" class="form-label text-secondary">Password</label>
-          <input type="password" id="password" class="form-control form-control-lg mb-3" autocomplete="off">
-
-            <!-- <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="" autocomplete="off">
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="" autocomplete="off">
-                <div class="forgot">
-                    <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
-                </div>
-            </div> -->
-            <button class="sign">Log in</button>
+          <input type="password" id="password" class="form-control form-control-lg mb-3" autocomplete="off" required>
+          <button class="sign">Log in <i class="fas fa-arrow-right ms-1"></i></button>
         </form>
     </div>
   </div>
