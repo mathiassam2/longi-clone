@@ -1,41 +1,35 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import LoginView from "../views/login/LoginView.vue";
-import EhsView from "../views/ehs/EhsView.vue";
-import HrView from "../views/hr/HrView.vue";
-import ItView from "../views/it/ItView.vue";
-import TemplateView from "../views/template/template.vue";
 
 const routes = [
     {
         path: "/template",
         name: "Template",
-        component: TemplateView,
+        component: () => import("../views/template/template.vue"),
     },
     {
         path: "/",
         name: "Home",
-        component: HomeView,
+        component: () => import("../views/HomeView.vue"),
     },
     {
         path: "/login",
         name: "Login",
-        component: LoginView,
+        component: () => import("../views/login/LoginView.vue"),
     },
     {
         path: "/ehs",
         name: "EHS",
-        component: EhsView,
+        component: () => import("../views/ehs/EhsView.vue"),
     },
     {
         path: "/hr",
         name: "HR",
-        component: HrView,
+        component: () => import("../views/hr/HrView.vue"),
     },
     {
         path: "/it",
         name: "IT",
-        component: ItView,
+        component: () => import("../views/it/ItView.vue"),
     },
 ];
 
