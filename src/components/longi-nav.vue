@@ -3,6 +3,7 @@
     <div class="container-fluid me-4">
       <!-- Button trigger for offcanvas -->
       <button
+        v-show="$route.name !== 'Home'"
         id="offcanvas-trigger"
         class="btn d-lg-none"
         type="button"
@@ -10,7 +11,7 @@
         data-bs-target="#offcanvasSidebar"
         aria-controls="offcanvasSidebar"
       >
-      <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-ellipsis-v"></i>
       </button>
       <!-- End of offcanvas button -->
 
