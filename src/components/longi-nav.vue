@@ -1,6 +1,6 @@
 <template>
   <nav v-if="!isLoginPage" class="navbar border-bottom border-body fixed-top navbar-expand-lg bg-white">
-    <div class="container-fluid me-4">
+    <div class="container-fluid mx-4">
       <!-- Button trigger for offcanvas -->
       <button
         v-show="$route.name !== 'Home'"
@@ -16,9 +16,9 @@
       <!-- End of offcanvas button -->
 
       <!-- Longi logo -->
-      <a class="navbar-brand ms-lg-0" href="#">
+      <router-link :to="{ name: 'Home' }" class="navbar-brand ms-lg-0">
         <img src="../assets/longi-logo.svg" alt="Longi" width="80">
-      </a>
+      </router-link>
 
       <!-- Navbar toggler for collapsing -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
