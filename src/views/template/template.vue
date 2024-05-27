@@ -14,17 +14,17 @@
 </template>
     
 <script>
-    import Sidebar from '../../components/sidebar.vue';
+import Sidebar from '../../components/sidebar.vue';
     
-    export default {
+export default {
     name: 'EhsView',
     components: {
-    Sidebar,
+        Sidebar,
     },
     data() {
-    return {
-        sidebarTitle: 'TEMPLATE SIDEBAR',
-    };
+        return {
+            sidebarTitle: 'TEMPLATE SIDEBAR',
+        };
     },
     computed: {
         //side bar json formatting
@@ -32,17 +32,17 @@
         // name: route name (register in router/index.js)
         sidebarLinks() {
             return [
-            { text: 'Home', name: 'Home' },
-            { text: 'Log out', name: 'Login' },
-            {
-                text: 'Dropdown links',
-                dropdown: [
-                    { text: 'Home', name: 'Home' },
-                    { text: 'Log out', name: 'Login' },
-                ],
-            },
+                { text: 'Home', name: 'Home' },
+                { text: 'Log out', name: 'Login' },
+                {
+                    text: 'Dropdown links',
+                    dropdown: [
+                        { text: 'Home', name: 'Home' },
+                        { text: 'Log out', name: 'Login' },
+                    ],
+                },
             ];
         },
     },
-    };
+};
 </script>
