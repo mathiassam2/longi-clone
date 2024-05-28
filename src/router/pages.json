@@ -1,3 +1,10 @@
+/* 
+   {
+       "path": "name of folder in view folder",
+       "name": "name of component",
+       "componentPath": "directory of component relative to this json file"
+   }
+*/
 [
     {
         "path": "/template",
