@@ -1,39 +1,32 @@
-/* 
-   {
-       "path": "name of folder in view folder",
-       "name": "name of component",
-       "componentPath": "directory of component relative to this json file"
-   }
-*/
 [
     {
-        "path": "/template",
-        "name": "Template",
+        "webpath": "/template",
+        "componentName": "Template",
         "componentPath": "views/template/template.vue"
     },
     {
-        "path": "/",
-        "name": "Home",
+        "webpath": "/",
+        "componentName": "Home",
         "componentPath": "views/HomeView.vue"
     },
     {
-        "path": "/login",
-        "name": "Login",
+        "webpath": "/login",
+        "componentName": "Login",
         "componentPath": "views/login/LoginView.vue"
     },
     {
-        "path": "/ehs",
-        "name": "EHS",
+        "webpath": "/ehs",
+        "componentName": "EHS",
         "componentPath": "views/ehs/EhsView.vue"
     },
     {
-        "path": "/hr",
-        "name": "HR",
+        "webpath": "/hr",
+        "componentName": "HR",
         "componentPath": "views/hr/HrView.vue"
     },
     {
-        "path": "/it",
-        "name": "IT",
+        "webpath": "/it",
+        "componentName": "IT",
         "componentPath": "views/it/ItView.vue"
     }
 ]

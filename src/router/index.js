@@ -4,8 +4,8 @@ import pages from "./pages.json";
 
 // Dynamically generate routes from pages.json
 const routes = pages.map(page => ({
-    path: page.path,
-    name: page.name,
+    path: page.webpath,
+    name: page.componentName,
     component: () => import(`../${page.componentPath}`),
 }));
 
