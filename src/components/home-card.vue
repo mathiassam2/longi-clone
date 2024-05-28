@@ -1,5 +1,5 @@
 <template>
-<div class="card p-3 m-2" @click="redirectToPage">
+<div class="card p-3 m-2 mb-4" @click="redirectToPage">
     <div class="header">
         <div class="icon">
             <i :class="icon"></i>
