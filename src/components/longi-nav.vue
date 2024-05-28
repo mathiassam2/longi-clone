@@ -1,5 +1,5 @@
 <template>
-  <nav v-if="!isLoginPage" class="navbar border-bottom border-body fixed-top navbar-expand-lg bg-white">
+  <nav v-if="!isLoginPage" class="navbar nav-underline border-bottom border-body fixed-top navbar-expand-lg bg-white">
     <div class="container-fluid mx-4">
       <!-- Button trigger for offcanvas -->
       <button
@@ -28,7 +28,8 @@
       <!-- Navbar links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <router-link  class="nav-link active" aria-current="page" :to="{ name: 'Home'}">Home</router-link>
+          <router-link  class="nav-link" aria-current="page" :to="{ name: 'Home'}">Home</router-link>
+          <router-link  class="nav-link" aria-current="page" :to="{ name: 'Template'}"><i class="fa fa-code" aria-hidden="true"></i></router-link>
           <router-link class="nav-link" :to="{ name: 'Login'}">Log out</router-link>
           <!-- <a class="nav-link" href="#">Pricing</a> -->
         </div>
@@ -46,3 +47,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.router-link-active {
+  color: #e60012;
+}
+</style>
