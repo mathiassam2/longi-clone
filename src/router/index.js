@@ -1,37 +1,13 @@
+// router.js
 import { createRouter, createWebHistory } from "vue-router";
+import pages from "./pages.json";
 
-const routes = [
-    {
-        path: "/template",
-        name: "Template",
-        component: () => import("../views/template/template.vue"),
-    },
-    {
-        path: "/",
-        name: "Home",
-        component: () => import("../views/HomeView.vue"),
-    },
-    {
-        path: "/login",
-        name: "Login",
-        component: () => import("../views/login/LoginView.vue"),
-    },
-    {
-        path: "/ehs",
-        name: "EHS",
-        component: () => import("../views/ehs/EhsView.vue"),
-    },
-    {
-        path: "/hr",
-        name: "HR",
-        component: () => import("../views/hr/HrView.vue"),
-    },
-    {
-        path: "/it",
-        name: "IT",
-        component: () => import("../views/it/ItView.vue"),
-    },
-];
+// Dynamically generate routes from pages.json
+const routes = pages.map(page => ({
+    path: page.path,
+    name: page.name,
+    component: () => import(`../${page.componentPath}`),
+}));
 
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),

@@ -1,0 +1,32 @@
+[
+    {
+        "path": "/template",
+        "name": "Template",
+        "componentPath": "views/template/template.vue"
+    },
+    {
+        "path": "/",
+        "name": "Home",
+        "componentPath": "views/HomeView.vue"
+    },
+    {
+        "path": "/login",
+        "name": "Login",
+        "componentPath": "views/login/LoginView.vue"
+    },
+    {
+        "path": "/ehs",
+        "name": "EHS",
+        "componentPath": "views/ehs/EhsView.vue"
+    },
+    {
+        "path": "/hr",
+        "name": "HR",
+        "componentPath": "views/hr/HrView.vue"
+    },
+    {
+        "path": "/it",
+        "name": "IT",
+        "componentPath": "views/it/ItView.vue"
+    }
+]
