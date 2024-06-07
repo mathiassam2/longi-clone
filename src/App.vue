@@ -30,6 +30,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body, #app {
+  height: 100vh;
   background-color: #f9f9f9;
 }
 *{

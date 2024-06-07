@@ -71,6 +71,7 @@ export default {
   color: #e60012;
   margin-top: 100px;
   font-size: 3rem;
+  letter-spacing: 5px;
 }
 .home-content {
   text-align: center;
